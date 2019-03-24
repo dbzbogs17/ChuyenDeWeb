@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta charset="UTF-8" />
+
     <link href="/resources/bs4/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/resources/bs4/css/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/resources/bs4/css/style.min.css" />
@@ -38,15 +40,15 @@
                     </a>
                     <div style="columns: 3;" class="dropdown-menu dropdown-default"
                         aria-labelledby="navbarDropdownMenuLink-333">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Kinh tế</a>
+                        <a class="dropdown-item" href="#">Văn học</a>
+                        <a class="dropdown-item" href="#">Nuôi dạy trẻ</a>
+                        <a class="dropdown-item" href="#">Kỹ năng</a>
+                        <a class="dropdown-item" href="#">Khoa học</a>
+                        <a class="dropdown-item" href="#">Toán học</a>
+                        <a class="dropdown-item" href="#">Xã hội</a>
+                        <a class="dropdown-item" href="#">Tiểu thuyết</a>
+                        <a class="dropdown-item" href="#">Ngoại ngữ</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -56,11 +58,18 @@
             <ul class="navbar-nav ml-auto nav-flex-icons">
                 <form class="form-inline my-2 my-lg-0 ml-auto">
                     <input class="form-control" type="search" placeholder="Nhập tên sách" aria-label="Nhập tên sách">
-                    <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Tìm kiếm</button>
+                    <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </form>
                 <li class="nav-item dropdown">
                     <a class="nav-link">
                         <i class="fas fa fa-cart-plus"></i> Giỏ hàng
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="modal" data-target="#modalLRForm">
+                        <i class="fas fa fa-user"></i> Đăng nhập
                     </a>
                 </li>
                 <li class="nav-item dropdown">
@@ -164,7 +173,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=bg3">Burger 2 lớp bò, phô mai</a>
                                     </div>
-                                    <div class="pricesp">55000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=bg3"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -185,7 +195,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=bg6">Burger bò miếng lớn, phô mai</a>
                                     </div>
-                                    <div class="pricesp">65000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=bg6"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -207,7 +218,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=bg7">Burger gà phô mai đặc biệt</a>
                                     </div>
-                                    <div class="pricesp">65000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=bg7"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -229,7 +241,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=bg8">Burger 2 lớp bò</a>
                                     </div>
-                                    <div class="pricesp">65000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=bg8"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -251,7 +264,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=cb1">Nước ngọt Coca-cola</a>
                                     </div>
-                                    <div class="pricesp">25000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=cb1"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -273,7 +287,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=cb2">Trà nóng</a>
                                     </div>
-                                    <div class="pricesp">20000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=cb2"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -295,7 +310,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=tm4">Kem McSundae™ sốt Dâu</a>
                                     </div>
-                                    <div class="pricesp">25000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=tm4"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -317,7 +333,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=tm4">Kem McSundae™ sốt Dâu</a>
                                     </div>
-                                    <div class="pricesp">25000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=tm4"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -349,7 +366,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=bg3">Burger 2 lớp bò, phô mai</a>
                                     </div>
-                                    <div class="pricesp">55000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=bg3"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -370,7 +388,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=bg6">Burger bò miếng lớn, phô mai</a>
                                     </div>
-                                    <div class="pricesp">65000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=bg6"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -392,7 +411,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=bg7">Burger gà phô mai đặc biệt</a>
                                     </div>
-                                    <div class="pricesp">65000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=bg7"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -414,7 +434,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=bg8">Burger 2 lớp bò</a>
                                     </div>
-                                    <div class="pricesp">65000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=bg8"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -436,7 +457,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=cb1">Nước ngọt Coca-cola</a>
                                     </div>
-                                    <div class="pricesp">25000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=cb1"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -458,7 +480,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=cb2">Trà nóng</a>
                                     </div>
-                                    <div class="pricesp">20000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=cb2"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -480,7 +503,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=tm4">Kem McSundae™ sốt Dâu</a>
                                     </div>
-                                    <div class="pricesp">25000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=tm4"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -502,7 +526,8 @@
                                     <div class="namesp">
                                         <a href="thongtinsanpham.jsp?txt_search=tm4">Kem McSundae™ sốt Dâu</a>
                                     </div>
-                                    <div class="pricesp">25000 Đ</div>
+                                    <div class="pricesp p-0 m-0"><button class="btn btn-sm btn-danger">Giá:
+                                            25.000đ</button></div>
                                     <div class="button-hd">
                                         <a href="thongtinsanpham.jsp?txt_search=tm4"><i class="fa fa-shopping-cart"
                                                 aria-hidden="true"></i></a>
@@ -524,7 +549,7 @@
                                 >>></span></a>
                     </div>
                     <div class="card-body bg-white">
-                        <div class="row p-0">
+                        <div class="row p-0 border-bottom mb-2 pb-2">
                             <div class="col-4">
                                 <img
                                     src="https://www.vinabook.com/images/thumbnails/product/240x/331194_p86722mbiatruoc.jpg" />
@@ -535,8 +560,7 @@
                                 <button class="btn btn-sm btn-danger">Giá: 25.000đ</button>
                             </div>
                         </div>
-                        <hr>
-                        <div class="row p-0">
+                        <div class="row p-0 border-bottom mb-2 pb-2">
                             <div class="col-4">
                                 <img
                                     src="https://www.vinabook.com/images/thumbnails/product/240x/331194_p86722mbiatruoc.jpg" />
@@ -547,8 +571,7 @@
                                 <button class="btn btn-sm btn-danger">Giá: 25.000đ</button>
                             </div>
                         </div>
-                        <hr>
-                        <div class="row p-0">
+                        <div class="row p-0 border-bottom mb-2 pb-2">
                             <div class="col-4">
                                 <img
                                     src="https://www.vinabook.com/images/thumbnails/product/240x/331194_p86722mbiatruoc.jpg" />
@@ -569,7 +592,7 @@
                                 >>></span></a>
                     </div>
                     <div class="card-body bg-white">
-                        <div class="row p-0">
+                        <div class="row p-0 border-bottom mb-2 pb-2">
                             <div class="col-4">
                                 <img
                                     src="https://www.vinabook.com/images/thumbnails/product/240x/331194_p86722mbiatruoc.jpg" />
@@ -580,8 +603,7 @@
                                 <button class="btn btn-sm btn-danger">Giá: 25.000đ</button>
                             </div>
                         </div>
-                        <hr>
-                        <div class="row p-0">
+                        <div class="row p-0 border-bottom mb-2 pb-2">
                             <div class="col-4">
                                 <img
                                     src="https://www.vinabook.com/images/thumbnails/product/240x/331194_p86722mbiatruoc.jpg" />
@@ -592,8 +614,7 @@
                                 <button class="btn btn-sm btn-danger">Giá: 25.000đ</button>
                             </div>
                         </div>
-                        <hr>
-                        <div class="row p-0">
+                        <div class="row p-0 border-bottom mb-2 pb-2">
                             <div class="col-4">
                                 <img
                                     src="https://www.vinabook.com/images/thumbnails/product/240x/331194_p86722mbiatruoc.jpg" />
@@ -752,6 +773,122 @@
 
     </footer>
     <!-- Footer -->
+    <!--Modal: Login / Register Form-->
+    <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Modal cascading tabs-->
+                <div class="modal-c-tabs">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+                        <li class="nav-item text-white">
+                            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i
+                                    class="fa fa-user mr-1"></i>
+                                Đăng nhập</a>
+                        </li>
+                        <li class="nav-item text-white">
+                            <a class="nav-link text-white" data-toggle="tab" href="#panel8" role="tab"><i
+                                    class="fa fa-user-plus mr-1"></i>
+                                Đăng ký</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panels -->
+                    <div class="tab-content">
+                        <!--Panel 7-->
+                        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                            <!--Body-->
+                            <div class="modal-body mb-1">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput10"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput10">Your
+                                        email</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput11"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput11">Your
+                                        password</label>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <button class="btn btn-info">Log in <i class="fa fa-sign-in ml-1"></i></button>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-center text-md-right mt-1">
+                                    <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                    <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                        <!--/.Panel 7-->
+
+                        <!--Panel 8-->
+                        <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                            <!--Body-->
+                            <div class="modal-body">
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="email" id="modalLRInput12"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput12">Your
+                                        email</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-5">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput13"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput13">Your
+                                        password</label>
+                                </div>
+
+                                <div class="md-form form-sm mb-4">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="modalLRInput14"
+                                        class="form-control form-control-sm validate">
+                                    <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat
+                                        password</label>
+                                </div>
+
+                                <div class="text-center form-sm mt-2">
+                                    <button class="btn btn-info">Sign up <i class="fa fa-sign-in ml-1"></i></button>
+                                </div>
+
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-right">
+                                    <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a>
+                                    </p>
+                                </div>
+                                <button type="button" class="btn btn-outline-info waves-effect ml-auto"
+                                    data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!--/.Panel 8-->
+                    </div>
+
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal: Login / Register Form-->
 </body>
 
 </html>
